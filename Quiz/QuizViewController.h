@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuizViewController : UIViewController
+@interface QuizViewController : UIViewController {
+    NSArray *questions, *answers;
+    NSInteger index;
+}
+@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
+- (IBAction)showAnswer:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
+- (IBAction)showQuestion:(id)sender;
 
 @end
